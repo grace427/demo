@@ -3,6 +3,10 @@ const express = require('express');
 const app = express();
 
 
+app.get("/", (req, res) => {
+    res.send('video test');
+});
+
 app.get("/video", (req, res) => {
     res.sendFile(__dirname+'/views/video.html');
 });
